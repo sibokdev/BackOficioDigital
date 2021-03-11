@@ -1,0 +1,402 @@
+
+========================================
+Date changes 30/11/2016 Version 0.1
+========================================
+
+* DOX-56 | Crear CRUD tipos
+
+* DOX-57 | Crear CRUD subtipos
+
+* DOX-55 | Crear CRUD clientes
+
+* DOX-54 | Crear CRUD documentos
+
+* DOX-59 | Crear CRUD ordenes
+
+* DOX-60 | Crear CRUD Metodos de pago
+
+* DOX-61 | Crear CRUD Configuraciones del negocio
+
+* DOX-62 | Crear CRUD Usuarios
+
+* DOX-64 | Crear el handler de errores (Restful API)
+
+* DOX-71 Control de Acceso a la Administracion
+
+* DOX-71 Gestion de Administradores
+
+* dox-71
+
+* Adding missing files
+
+* DOX-71-Se elimino porque el formulario se paso a un boton modal.
+
+* DOX-71-Se modifico para que solo aparecieran los clientes con servicios pendientes
+           y se incluyeron datos ficticios a la base de datos, para poderlos presentar.
+
+* DOX-71-Se modifico el archivo routes, para incluir la ruta que lleva al
+           controlador: EmpleadoController donde se borraron las funciones getCreate y postcreate
+           , y a gregando la funcion create, que obtiene los datos de un formulario
+           hecho en el archivo clientes/mostrar, atraves de un boton modal, incluyendo
+           la plantilla form/user el cual tambien fue modificado al quitar el campo password,
+           y sustituirlo por agregar un password aleatorio que se realiza atraves de la funcion
+           crear ubicada en el EmpleadoController, ademas de crear un select box
+           para la opcion de rol de empleado.
+
+* DOX-71-Se modifico el ClienteController para que tomara datos ficticios,
+           que fueron agregados a la base de datos, y los presentara en pantalla,
+
+* DOX-71-ADMINISTRADOR D
+
+* Jquery bug fix
+
+* Updates to the login and bug fixing
+
+* DOX-71 Gestionar Administradores
+
+* DOX-39 - [Backend] Cuota anual
+
+* DOX-71 - Aclaraciones
+
+* Fixing path route
+
+* "DOX-71 Cambios en aclaraciones"
+
+* "DOX-71 1.-En el home se agrego un boton modal para crear un servicio, cuando el cliente llame para solicitarlo,
+               se cambiaron los tipos de servicio por entrega, recoleccion y mixto, los estatus a programado, en curso, concluido y cancelado.
+            2.-En costos se modifico cuota anual y costo por servicio para que se presentaran y modificaran directamente en la base de datos,
+               en cuota anual personalizada
+
+* DOX-71
+
+* DOX-71 Cambios en costos
+
+* Adding new style to boveda de documentos
+
+* Fixing costos view bugs
+
+* DOX-71 Cambios en Costos
+
+* Bug fixing for centro de costos
+
+* Fixing costoscontroller failure message
+
+* Creation of documents section
+    Changes to side bar
+
+* DOX-71 Cambios en costos: Se dejo funcionando actualizacion y crecion de costos
+    	personalizados y actualizacion de costos fijos.
+
+* changes
+
+* DOX-71 Se resolvio el problema, de que no almacenaba el password generado,
+    	en todas las tablas se le hizo paginacion, en empleados al suspender
+    	un mensajero, si tiene servicios asignados, esos servicios se ponen
+    	como servicios pendientes de asignar.
+    	En clientes, en el nombre del cliente, se hizo un link que habre
+    	un modal con todos los datos del cliente, tambien se creo un archivo,
+    	un controlador, un modelo y una tabla en la base de datos, esto para
+    	poder hacer funcionar la opcion de "usuarios referidos", donde se
+    	puso una tabla que presenta, el nombre y el correo del cliente que fue
+    	referido y el nombre y el correo del usuario que lo refirio.
+    	En aclaraciones, en la opcion de solucionar, se borro un boton y se
+    	pusieron las opciones que pidio el cliente, se hizo que se almacenara
+    	en la base de datos el tipo de solucion y la descripcion de la solucion.
+    	En Contol de documentos, en la parte de entradas y salidas, se hizo
+    	que el codigo introducido, sea almacenado en la base de datos.
+
+* DOX-71 Solucion problemas con los dropdown,
+
+* API changes
+
+* DOX-71 "Cargos y Abonos"
+    	Se termino la seccion de cargos y abonos , se realizo: en la parte
+    	de Ejecucion de cargos y abonos, la paginacion de la tabla principal
+    	que muestra los cargos vencidos, la tabla tiene un boton de acciones,
+    	con las acciones, marcar como pagado, que se ejecuta cuando el pago es
+    	en efectivo y hacer cobro con targeta, que presenta todos los datos
+    	de la tarjeta del cliente, a la cual se hara el cobro, al presionar el
+    	boton pagar.
+    	En la parte de consulta de cargos y abonos, se hizo paginacion a la
+    	tabla principal, que presenta los pagos realizados, y un boton de
+    	historial, que muestra todos los pagos hechos por ese cliente.
+
+* Changes to the menu
+
+* DOX-71 "Cambios en graficas y reportes"
+
+* DOX-71 "Reportes y Graficas"
+    	Se agrego la seccion de reporte de clientes donde se presenta una tabla
+    	con los clientes dados de alta y dados de baja del mes.
+    	Se agrego la seccion Estadistics del servicio, donde presenta una tabla
+    	con los servicios del mes.
+
+* Changes for Excel Download
+
+* DOX-71 "Modificacion en estadistcas de Servicios"
+
+* Adding excel file functionality
+
+* Changes on Reports
+
+* DOX-71 "Actualizacion de Boveda de documentos"
+    	Reparacion bug inicio.
+
+* DOX-Christian "Resolver bug en crear servicio y estructura de costos"
+                   Se hizo el ticket DOX-194 "Problema al crear nuevo servicio [Console]"
+    		y DOX-195 "Reordenar menu lateral y tabs [Dashboard]"
+
+* DOX-51 | Crear API login
+
+* DOX-51 | Crear API login | Se cambio API por api
+
+* DOX-51 | Crear API login | Se cambio API por api en el archivo routes
+
+* DOX-74 | Crear API Contratar Servicio
+
+* DOX-234 | Crear API Completar datos de usuario
+
+* DOX-239 | Crear API lista de servicios
+
+* DOX-239 | Crear API lista de servicios | eliminado diagonal extra
+
+* DOX-242 | Crear API detalle de un servicio
+
+* DOX-243 | Sección de registro - corrección con la nueva BD
+
+* DOX-244 | HOME - corrección con la nueva BD
+
+* DOX-243 | Sección de registro - corrección con la nueva BD | Agregado model UserBackend
+
+* DOX-246 | LOGIN - corrección con la nueva BD
+
+* DOX-248 "Configurar Datatables para uso con AJAX"
+    	paginacion atraves de ajax
+
+* DOX-248 "Configurar Datatables para uso con AJAX"
+    	Correcciones al codigo
+
+* DOX-248 "Configurar Datatables para uso con AJAX"
+    	corrections in the code (functions documentation).
+
+* DOX-248 "Configurar Datatables para uso con AJAX"
+    	DELETE coments
+
+* DOX-262 "Code Optimization [Backend]"
+    	delete scripts repeated
+
+* DOX-266 "Cambios en side bar"
+    	Cambios en side bar
+
+* DOX-267 "Aplicar el uso de datos con AJAX a todas las pagina [Backend]"
+    	Aplicar el uso de datos con AJAX a todas las pagina
+
+* DOX-246 | Login | cambios en la estrucutra de la respuesta success de la peticion de inicio de sesion
+
+* DOX-267 "Aplicar el uso de datos con AJAX a todas las pagina [Backend]"
+            Terminar paginacion y funcionalidad de modales con ajax
+
+* DOX-267 "Aplicar el uso de datos con AJAX a todas las pagina [Backend]"
+    	coreeccion de comentarios , cambiar de español a ingles , y
+    	cambiar la referencia del comentario a la vista correcta.
+
+* DOX-272 | Configuración OAuth2 y Dingo (Restful API)
+
+* DOX-272 | Configuración OAuth2 y Dingo (Restful API) | base de datos agregada
+
+* DOX-288 | Login
+
+* DOX-287 "Regresar usersbackend a users (base de datos)"
+    	unir users backen y user en user, y verificar el codigo para que
+    	no genere errores con los cambios en la base de datos.
+
+* DOX-287 "Regresar usersbackend a users (base de datos)"
+    	agregar Base de Datos.
+
+* DOX-288 | Creación del API | Login | Agregada libreia Authorizer
+
+* DOX-288 | Creación del API | Login | Ignorado composer.lock, eliminados comentarios y separacion de endpoints
+
+* DOX-315 "Delimitar a Clientes y Repartidres ingresar al back office."
+
+    	Delimitar a Clientes y Repartidres ingresar al back office.
+
+* DOX-315 "Delimitar a Clientes y Repartidres ingresar al back office."
+    	Delimitar a Clientes y Repartidres ingresar al back office.
+
+* DOX-317 "Estructura de HTML [Backend]"
+    	Corregir la estructura html, que se manda desde el controlador
+    	a el dataTable, este bug es que se debe almacenar un dato en una
+    	variable , pero este se almacena con llaves , ejemplo:
+    	lo que debe de ser: 3 ; lo que se almacena: 3
+
+* DOX-289 | Creación del API | Contratar servicio
+
+* DOX-288 | Creación del API | Contratar servicio
+
+* DOX-290 | Completar datos
+
+* DOX-316 Configuración de base de datos por environment de desarrollo
+
+* DOX-316 Configuración de base de datos por environment de desarrollo | ENV config
+
+* DOX-314 | Recuperar contraseña
+
+* DOX-314 | Recuperar contraseña | Eliminación de routes que no se usarán
+
+* DOX-320 | Actualizar archivo .env.AWS
+
+* DOX-319 "Avisar al usuario que sus credenciales son invalidas al iniciar sesión."
+    	Al intentar iniciar sesión:
+    	*Si las credenciales del usuario son invalidas mostrar mensaje de "Las credenciales de acceso son invalidas o el usuario no existente"
+    	*Si el usuario es tipo cliente mostrar mensaje "Este usuario ya está registrado como cliente".
+    	*Si el usuario es tipo repartidor mostrar mensaje "Este usuario ya está registrado como repartidor".
+    	Hacer que si el usuario no ingresa el email o el password le presente
+    	un mensaje de que esos campos son requeridos.
+
+* DOX-317 Avisar al usuario que sus credenciales son invalidas al iniciar sesión. | Al intentar iniciar sesión:
+
+* DOX-319 Avisar al usuario que sus credenciales son invalidas al iniciar sesión. | Se hizo que el los campos email y password sean requeridos y al no introducir datos regresara un mensaje de que esos campos son requeridos , tambien se hizo que los usuario que son clientes o mensajeros no tengan acceso al backoffice , y los redireccione al login con un mensaje de que no tienen permiso
+
+* DOX-319 "Correccion de errores"
+    	correccion de errores
+
+* DOX-319 "Correcion de errores"
+    	correccion de errores.
+
+* DOX-323 "Validaciones de login [Backend]"
+    	Crear en el login validaciones para que envie mensajes de error ,
+    	de si es un correo valido, si esta dando datos correctos.
+
+* DOX-324 "Quitar campos revnue [Backend]"
+    	Quitar campos revenue en centro de costos.
+
+* DOX-325 | Bug que permitia guardar en BD datos nulos
+
+* DOX-321 - Modificaciones a tablas en BD para soportar el uso de documentos
+
+* DOX-324 "Quitar campos revenue [Backend]"
+    	corregir los comentarios y ponerlos en ingles, acentuar electrónico
+    	en costos.mostrar
+
+* DOX-324 "Quitar campos revenue [Backend]"
+    	Cambiar <br> por estilos css(margen).
+
+* DOX-322 - Adaptar back office para soportar los cambios de DOX-321
+
+* DOX-324 "Quitar campos revenue [Backend]"
+    	Cambiar el estilo en línea, por una clase del archivo css custom.css
+
+* DOX-326 "Bug al cargar lista de empleados"
+    	Bug al cargar lista de empleados
+
+* DOX-322 - Adaptar back office para soportar los cambios de DOX-321 | se corrigio bug en nombre de campos estatus
+
+* DOX-321 - Modificaciones a tablas en BD para soportar el uso de documentos | bug en migraciones de documentos movinientos
+
+* develop - install doctrine/dbal
+
+* DOX-321 - Modificaciones a tablas en BD para soportar el uso de documentos | cambio de nombre tabla de documents_movements
+
+* DOX-321 - Modificaciones a tablas en BD para soportar el uso de documentos | bug en el log de base de datos
+
+* DOX-321 - Modificaciones a tablas en BD para soportar el uso de documentos | agregando registros de prueba para documents
+
+* DOX-322 - Adaptar back office para soportar los cambios de DOX-321 | resolución de merge y cambiar id_profile por id_role
+
+* DOX-321 - Modificaciones a tablas en BD para soportar el uso de documentos | se arreglaron los bugs en migraciones y estructura de la base de datos
+
+* DOX-326 "Cambiar el campo id_profile [Backend]"
+    	Cambiar el campo id_profile por id_role en las secciones de:
+    	HomeController, AclaracionesController, ChargesController,
+    	ClientController, CostosController, ReportsAndGraphicsControllers
+    	y UsersBackendController del backoffice.
+
+* Reverting merge with DOX-324
+
+* DOX-330 - Crear servicio de listado de documentos | creación del ws de documents, arreglando customRequest
+
+* DOX-288 | Se válido el role en el login. Se unificaron los responses y se agregó el endpoint para eliminar a un usuario
+
+* DOX-288 | Correccion error typo
+
+* DOX-288 | Correccion error typo
+
+* DOX-288 | Verificación de rol de usaurio
+
+* DOX-290 | Completar datos
+
+* DOX-290 | Completar datos | Error se sintaxis corregido
+
+* DOX-290 | Completar datos | validacion de token
+
+* DOX-314 | recuperar contraseña | adaptacion a nuevos cambios
+
+* DOX-332 | logout cliente
+
+* DOX-328 "Validación en los campos agregar empleado [Backend]"
+    	Validar que el usuario introduzca todos los capos(todos son requeridos).
+
+* DOX-328 "Validación en los campos agregar empleado [Backend]"
+    	Validar que el usuario introduzca todos los capos(todos son requeridos).
+
+* DOX-329 | Login mensajero
+
+* DOX-329 | Login mensajero | controller para el manejo del api de mensajeros
+
+* DOX-329 | Login mensajero | comentarios
+
+* DOX-328 "Validación en los campos agregar empleado [Backend]"
+    	al crear usuario se cierre el modal y se actualice la tabla de
+    	empleados, se agrego <br> despues de la imagen para evitar que se encime.
+
+* DOX-333 | Logout mensajero
+
+* DOX-314 | Recuperar contraseña | Modificado response de error/success
+
+* DOX-328 "Validación en los campos agregar empleado [Backend]"
+    	Limpiar modalees al guardar usuario, no permitir correos ya
+    	registrados, cerrar mensajes ya vistos.
+
+* DOX-314 | Recuperar contraseña | Modificado response de error/success
+
+* DOX-331 - Crear servicio para registrar nuevo documento - creando metodo y pruebas
+
+* DOX-334 - Crear servicio para borrar documento | se agrego migración para campo status y metodo de WS
+
+* DOX-335 - Crear servicio para editar documento y actualizar imagen | se agrego también metodo post para actualizar la imagen del documento, se agregaron rutas
+
+* DOX-335 - Crear servicio para editar documento y actualizar imagen | se agregaron mas campos al response de documents
+
+* DOX-336 "Tabla Clientes [Backend]"
+    	Error en el dataTable al traer los datos.
+
+* DOX-338 "Cambio de posision de flechas sidebar [Backend]"
+    	cambiar la flecha del sidebar que apunta a la izquierda
+
+* merge resolution
+
+* DOX-340 - Recuperar contraseña mensajero
+
+* DOX-342 "No se presenta el status del cliente [Backend]"
+    	Se cambio el estatus(active_status) de los usuarios por los valores
+    	1: Activo y 0: Inactivo por los de 1: Activo y 2: Inactivo , ya que
+    	generaba problemas.
+
+* DOX-343 "Buscadores del sitio [Backend]"
+    	Los buscadores del sitio, no busca los apellidos del cliente, si introduces un apellido existente , no lo encuentra.
+
+* DOX-346 - Agregar status a la consulta de documentos en backend
+
+* DOX-345 "Error con las ñ [Backend]"
+    	Error al traer los datos cambia la letra ñ por otro codigo.
+
+* DOX-347 "Error al cargar los datos en la opción editar empleado [Backend]"
+    	Al seleccionar la opción modificar en el dropdown del registro del
+    	cliente, no trae los datos de ese cliente, no trae nada.
+
+* DOX-349 "Agregar columna "Estatus" en lista de empleados y mostrar
+              todos los empleados"
+    	Mostrar absolutamente todos los empleados sin importar su estatus.
+    	Incluir una nueva columna Estatus con el estatus del empleado en
+    	la tabla donde se listan los empleados.
