@@ -5,7 +5,7 @@ Route::get('auth/login', 'Auth\AuthController@loginView');
 Route::post('auth/loginForm', 'Auth\AuthController@login');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::get('client/active/{email}',  'UsersApiController@active');
-
+Route::get('courier/oficios',  'CouriersApiController@getOficiosCatalog');
 // Registration routes...
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
@@ -234,7 +234,6 @@ $api->version('v1', ['namespace' => 'App\Http\Controllers'], function ($api) {
    */
    $api->group(['prefix' => 'v1'], function($api) {
 	  $api->post('courier/login',  'CouriersApiController@login');
-	  $api->get('courier/oficios',  'CouriersApiController@getOficiosCatalog');
 	  $api->post('courier/register',  'CouriersApiController@registerProveedorServicios');
 	  $api->delete('courier/login',  'CouriersApiController@login');
 	  $api->delete('courier/register',  'CouriersApiController@registerProveedorServicios');
