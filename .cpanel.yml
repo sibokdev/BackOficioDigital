@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/drbercom/public_html/
-    - /bin/cp laravel $DEPLOYPATH
+    - /bin/cp -R laravel $DEPLOYPATH
