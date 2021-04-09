@@ -8,21 +8,33 @@ use App\PaymentsMethods;
 use App\Security;
 use App\SecurityQuestions;
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\Storage;
+
+
 use Dingo\Api\Routing\Helpers;
 use Dingo\Api\Auth\Provider\OAuth2;
 use LucaDegasperi\OAuth2Server\Facades\Authorizer;
 use App\User;
+use App\PersonalDirection;
+use App\PersonalRerefence;
+use App\WorkReference;
+use App\random_code;
 use DB;
+use File;
 use App\Library\EmailHelper\EmailHandler;
 use App\Library\CustomResponsesHandler;
 use Illuminate\Support\Facades\Hash;
 use Carbon\Carbon;
+
+//librerias http call
+use GuzzleHttp\Client;
+use GuzzleHttp\RequestOptions;
+
 
 class CouriersApiController extends Controller{
     
@@ -39,14 +51,20 @@ class CouriersApiController extends Controller{
    * password or email are wrong both cases in json format
    */
    public function login(Request $request){
-      if (!$this->checkEmptyFields(['email' => $request['username'], 'password' => $request['password']])) {
-
-         if (Auth::attempt(['email' => $request['username'], 'password' => $request['password']])) {
+      if (!$this->checkEmptyFields(['email' => $request['username'], 'phone' => $request['username'], 'password' => $request['password']])) {
+         
+         if (!str_contains($request['username'],'@')) {
+            $user = User::where('phone', $request['username']);
+            $request['username'] = $user->first()->email;
+         }
+         
+         if (Auth::attempt(['email' => $request['username'],'password' => $request['password']])) {
+            
             $user = User::where('email', $request['username']);
 
-            if ($user->first()->id_role == 5) {
+            if ($user->first()->status == 12) {
 
-               $auth = $this->lookingForToken($user->first()->id);
+              $auth = $this->lookingForToken($user->first()->id);
 
                if (empty($auth)){
                   Authorizer::issueAccessToken();
@@ -155,7 +173,7 @@ class CouriersApiController extends Controller{
 				"response" => null
 			]);
 		} else {
-			$exists = User::where('email',  $request['email'])->where('id_role', 5);
+			$exists = User::where('email',  $request['email'])->where('status', 11);
 			
 			if(empty($exists->first())) {
 				return CustomResponsesHandler::response([
@@ -222,5 +240,285 @@ class CouriersApiController extends Controller{
          ->select('oauth_access_tokens.id AS token', 'oauth_access_tokens.expire_time AS expires')
          ->get();
    }
+    
+   public function registerProveedorServicios(Request $request){
+    
+         
+          $phone = $request->phone;
+          $INEfront = $request->INEfront;
+          $INEBack = $request->INEBack;
+  
+       Storage::disk('ftp')->put($phone.'/ineF.jpg', $INEfront);
+       Storage::disk('ftp')->put($phone.'/ineB.jpg', $INEBack);
+      
+     $url = "$phone/ineF.jpg";
+     $url1 = "$phone/ineB.jpg";
+     
+      //$useriD1 = DB::table('users')->insertGetId($data);
+     $fotos = array(
+          'name' => $request['name'],
+          'surname1' =>$request['surname1'],
+          'surname2'=>$request['surname2'],
+          'birthday'=>$request['birthday'],
+          'age'=>$request['age'],
+          'password' => bcrypt($request['password']),
+          'INEKey'=>$request['INEKey'],
+          'office'=>$request['office'],
+          'INEfront'=>$url,
+          'INEBack'=>$url1,
+          'phone'=>$request['phone'],
+          'email'=>$request['email'],
+          'status'=>11);
+      
+        
+        $useriD = DB::table('users')->insertGetId($fotos);
+      //return Storage::disk('ftp')->get($phone.'/ineF.jpg');
 
-}
+      
+      $compro = $request->comprodomi;
+      Storage::disk('ftp')->put($phone.'/compro_domicilio.jpg', $compro);
+      $url3 = "$phone/compro_domicilio.jpg";
+      //$was_inserted2 = DB::table('PersonalDirection')->insert($data1);
+      $foto = array(
+           'calle' => $request['calle'],
+           'numero' => $request['numero'],
+           'codigopostal'=>$request['codigopostal'],
+           'colonia' => $request['colonia'],
+           'municipio' => $request['municipio'],
+           'estado' => $request['estado'],
+           'latitud' => $request['latitud'],
+           'longitud'=>$request['longitud'],
+           'comprodomi' => $url3,
+           'users_id' => $useriD);
+       
+       $was_inserted2 = DB::table('PersonalDirection')->insert($foto);
+       
+        
+       $data2 = array(
+
+         'pnombre' => $request['pnombre'],
+         'papellidos' => $request['papellidos'],
+         'ptelefono1' => $request['ptelefono1'],
+         'ptelefono2' => $request['ptelefono2'],
+         'pnombre2' => $request['pnombre2'],
+         'papellidos2' => $request['papellidos2'],
+         'ptelefono12' => $request['ptelefono12'],
+         'ptelefono22' => $request['ptelefono22'],
+         'users_id' => $useriD
+         
+      );
+       
+       $was_inserted1 = DB::table('PersonalReferences')->insert($data2);
+       
+         $data3 = array(
+
+         'wnombre' => $request['wnombre'],
+         'wapellidos' => $request['wapellidos'],
+         'wtelefono1' => $request['wtelefono1'],
+         'wtelefono2' => $request['wtelefono2'],
+         'wnombre2' => $request['wnombre2'],
+         'wapellidos2' => $request['wapellidos2'],
+         'wtelefono12' => $request['wtelefono12'],
+         'wtelefono22' => $request['wtelefono22'],
+         'users_id' => $useriD
+         
+      );
+      $was_inserted3 = DB::table('WorkReferences')->insert($data3);
+     
+        
+      if ($was_inserted3) {
+      
+         return ([
+         "code"=>$useriD,
+         "message" => "El se acaba de registrar los datos",
+         "id" =>  $useriD
+         
+      ]);
+    
+
+   } else {
+      return CustomResponsesHandler::response([
+         "code" => 404,
+         "message" => "El email ya esta registrado",
+         "response" => null
+      ]);
+   
+    }
+    
+    return $useriD;
+   }
+   
+
+   
+   public function generateInvitationCode(Request $request){
+        $data4 = array(
+          'keycode' => rand(100000,900000),
+          'phone' => $request['phone'],
+          //'users_id' => $useriD
+          );
+          
+          
+          $phone = $request ['phone'];
+          $keycode = $request->keycode;
+          
+          $existencia = DB::table('random_codes')
+          ->select('keycode')
+          ->where('keycode', '=', $keycode)
+          ->get();
+          
+        if (count($existencia) >= 1) {  
+           
+		}else{
+            $was_inserted4 = DB::table('random_codes')->insert($data4);
+            
+            $phone1 = DB::table('random_codes')
+            ->select('keycode')
+            ->where('phone',"=",$phone)
+            ->get();
+            
+             if (count($existencia) >= 1) {  
+                 
+                
+             }else{
+                 
+                 $code = implode(',', array_column($phone1, 'keycode'));
+                 
+                  $client = new Client([
+                'headers' => [ 'Content-Type' => 'application/json' ]
+            ]);
+             $response = $client->post('https://drber.com.mx/example/send_sms.php',
+                ['body' => json_encode(
+                    [
+                        'to' => "$phone",
+                        'message' => "Bienvenido a Oficio Digital tu código de acceso es: $code"
+                    ]
+                )]
+            );
+            
+            }
+            
+        }	
+       
+   }
+
+   
+       public function validateCode(Request $request){
+           
+           $code = $request['code'];
+           
+           
+          $verifi = DB::table('random_codes')
+          ->select('keycode')
+          ->where('keycode', "=", $code)
+          ->get();
+           
+           if($verifi){
+               
+               $was_inserted4 = DB::table('random_codes')
+               ->select('keycode')
+               ->where('keycode', "=",$code)
+               ->delete();
+               
+                 return ([
+         "message" => "existe",
+         "code" => 200,
+         "response"=>$verifi
+        
+         
+      ]);
+    
+           }else{
+               
+                
+                 return ([
+         "message" => "no existe",
+         "code" => 404
+         
+      ]);
+    
+           }
+           
+         
+          
+       }
+       
+       
+       
+       public function CodigosPostales(Request $request){
+              
+              $cp = $request['codigopostal'];
+               $url = "http://api-sepomex.hckdrk.mx/query/info_cp/$cp?token=a6425d19-2a37-455f-9914-640c316a37b0";
+          
+            $client = new Client();
+            $response = $client->get($url);
+            if ($response->getBody()) {
+                $data= json_decode((string) $response->getBody(), true);
+                
+            }
+              return ([
+                    "code" => 200,
+              "message" => "existe",
+              "response" =>$data
+              ]);
+       }
+       
+       public function reenviarCode(Request $request){
+           
+           $datos = array(
+               'phone'=>$request['phone'],
+               'keycode' => rand(100000,900000),
+               );
+           
+           $phone = $request['phone'];
+           $code = $request['keycode'];
+           
+            $verifi1 = DB::table('random_codes')
+          ->select('phone')
+          ->where('phone', "=", $phone)
+          ->get();
+           
+           if($verifi1){
+               
+                $was_inserted6 = DB::table('random_codes')
+               ->select('phone')
+               ->where('phone', "=",$phone)
+               ->delete();
+               
+               
+                   $insert = DB::table('random_codes')->insert($datos);
+                   
+                     $client = new Client([
+                    'headers' => [ 'Content-Type' => 'application/json' ]
+                     ]);
+                   $response = $client->post('https://drber.com.mx/example/send_sms.php',
+                   ['body' => json_encode(
+                    [
+                        'to' => "$phone",
+                        'message' => "Bienvenido a Oficio Digital tu código de acceso es: $code"
+                    ]
+                )]
+            );
+                   
+               
+                 return ([
+         "message" => "existe",
+         "code" => 200,
+         "response"=>$verifi1
+         ]);
+               
+               
+           }else{
+               
+               
+                 
+                 return ([
+         "message" => "no existe",
+         "code" => 404
+         
+      ]);
+           }
+           
+       }
+   }
+
+

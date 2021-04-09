@@ -55,7 +55,11 @@ class User extends Model implements AuthenticatableContract,
       'created',
       'updated',
       'id_role',
-      'main_method_payment'
+      'main_method_payment',
+      'age',
+      'INEFront',
+      'INEBack',
+      'INEKey'
    ];
 
    # @param($id_role) integer (1:admin, 2:superadmin, 3:client, 4:encargado de boveda, 5:courier)
@@ -68,4 +72,12 @@ class User extends Model implements AuthenticatableContract,
    */
    protected $hidden = ['password', 'remember_token'];
 
+
+   /*public function PersonalDirections(){
+
+      return $this->belongsTo('app/PersonalDirection');
+   }*/
+
 }
+
+

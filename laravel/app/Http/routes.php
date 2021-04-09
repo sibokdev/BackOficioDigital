@@ -169,6 +169,8 @@ $api->version('v1', ['namespace' => 'App\Http\Controllers'], function ($api) {
 		$api->delete('client/{client_id}/logout',  'UsersApiController@logout');
 		$api->post('client/changePassword',  'UsersApiController@changePassword');
 		$api->put('client/{client_id}/completeData',  'UsersApiController@completeData');
+		
+		
 
 		/* Documents */
 		$api->get('client/documents', 'DocumentsApiController@getDocuments');
@@ -232,7 +234,23 @@ $api->version('v1', ['namespace' => 'App\Http\Controllers'], function ($api) {
    */
    $api->group(['prefix' => 'v1'], function($api) {
       $api->post('courier/login',  'CouriersApiController@login');
+	  $api->post('courier/register',  'CouriersApiController@registerProveedorServicios');
+	  $api->delete('courier/login',  'CouriersApiController@login');
+	  $api->delete('courier/register',  'CouriersApiController@registerProveedorServicios');
       $api->put('courier/recoveryPassword',  'CouriersApiController@recoveryPassword');
+      
+      $api->put('courier/{courier_id}/completeDataproveedor',  'CouriersApiController@completeDataproveedor');
+      
+      $api->put('courier/{courier_id}/completeDatacode',  'CouriersApiController@completeDatacode');
+      
+      $api->post('courier/validate','CouriersApiController@validateCode');
+      
+      $api->post('courier/generateInvitationCode','CouriersApiController@generateInvitationCode');
+      
+      $api->post('courier/CodigosPostales','CouriersApiController@CodigosPostales');
+      
+      $api->post('courier/reenviarCode','CouriersApiController@reenviarCode');
+
    });
 
    /**
@@ -241,6 +259,10 @@ $api->version('v1', ['namespace' => 'App\Http\Controllers'], function ($api) {
    */
 	$api->group(['prefix' => 'v1','middleware' => 'api.auth'], function($api) {
 		$api->delete('courier/{courier_id}/logout',  'CouriersApiController@logout');
+		
+		
+		/*complete data*/
+		
 
 		/*Documents*/
 		$api->put('courier/updateDocumentFolio/{document_id}', 'DocumentsApiController@updateDocumentFolio');

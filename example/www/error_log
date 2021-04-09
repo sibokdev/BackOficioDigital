@@ -1,0 +1,220 @@
+[26-Mar-2021 04:21:35 UTC] message 605cd5ae699a2 status: sent
+[26-Mar-2021 04:21:36 UTC] message 605cddee5c460 status: sent
+[26-Mar-2021 04:21:37 UTC] message 605cded0891f7 status: sent
+[26-Mar-2021 04:26:29 UTC] message 605d61bbac7c0 status: sent
+[26-Mar-2021 04:26:30 UTC] message 605d6215e6baa status: sent
+[26-Mar-2021 04:26:30 UTC] message 605d6228e0836 status: sent
+[26-Mar-2021 04:31:28 UTC] message 605d62925b92d status: sent
+[26-Mar-2021 04:31:28 UTC] message 605d6305a1749 status: sent
+[26-Mar-2021 04:36:28 UTC] message 605d648e13696 status: sent
+[26-Mar-2021 04:41:32 UTC] message 605d64dc4a763 status: failed
+[26-Mar-2021 04:41:32 UTC] message 605d656bef50e status: sent
+[26-Mar-2021 04:41:34 UTC] message 605d65b4d15d3 status: sent
+[26-Mar-2021 04:41:36 UTC] message 605d65f47a293 status: sent
+[26-Mar-2021 04:41:54 UTC] message 605d64dc4a763 status: failed
+[26-Mar-2021 04:41:54 UTC] PHP Warning:  unlink(/home/drbercom/public_html/example/outgoing_sms/605d64dc4a763.json): No such file or directory in /home/drbercom/public_html/example/www/gateway.php on line 109
+[26-Mar-2021 04:46:27 UTC] message 605d66a585a08 status: sent
+[26-Mar-2021 04:46:27 UTC] message 605d66aac7bbf status: sent
+[26-Mar-2021 04:46:54 UTC] message 605d64dc4a763 status: failed
+[26-Mar-2021 04:46:54 UTC] PHP Warning:  unlink(/home/drbercom/public_html/example/outgoing_sms/605d64dc4a763.json): No such file or directory in /home/drbercom/public_html/example/www/gateway.php on line 109
+[26-Mar-2021 04:51:25 UTC] message 605d6765b3bee status: sent
+[26-Mar-2021 04:51:26 UTC] message 605d677226b58 status: sent
+[26-Mar-2021 04:51:27 UTC] message 605d6797e2a5f status: sent
+[26-Mar-2021 04:51:33 UTC] message 605d67cdd4649 status: sent
+[26-Mar-2021 04:51:34 UTC] message 605d6813bc78d status: sent
+[26-Mar-2021 04:56:29 UTC] message 605d67a9e31ae status: sent
+[26-Mar-2021 04:56:30 UTC] message 605d68fd0f04f status: sent
+[26-Mar-2021 05:06:26 UTC] message 605d6bc9a9a27 status: failed
+[26-Mar-2021 05:06:50 UTC] message 605d6bc9a9a27 status: sent
+[26-Mar-2021 05:06:50 UTC] PHP Warning:  unlink(/home/drbercom/public_html/example/outgoing_sms/605d6bc9a9a27.json): No such file or directory in /home/drbercom/public_html/example/www/gateway.php on line 109
+[26-Mar-2021 05:11:26 UTC] message 605d6c1644ef1 status: sent
+[26-Mar-2021 05:11:26 UTC] message 605d6c2d35c85 status: sent
+[26-Mar-2021 05:11:28 UTC] message 605d6c6b05cee status: sent
+[26-Mar-2021 05:11:28 UTC] message 605d6c6f40dd5 status: sent
+[26-Mar-2021 05:11:29 UTC] message 605d6ca86f7a3 status: sent
+[26-Mar-2021 05:16:26 UTC] message 605d6d5656139 status: sent
+[26-Mar-2021 05:19:53 UTC] device_status = power_connected
+[26-Mar-2021 05:25:54 UTC] device_status = power_disconnected
+[26-Mar-2021 05:26:58 UTC] message 605d6f4dcaa5a status: sent
+[26-Mar-2021 05:26:58 UTC] message 605d6e7a5a969 status: sent
+[26-Mar-2021 05:27:03 UTC] message 605d700075788 status: sent
+[26-Mar-2021 16:27:16 UTC] message 605e07fdaf50a status: failed
+[26-Mar-2021 16:27:16 UTC] message 605e0810ad231 status: failed
+[26-Mar-2021 16:27:19 UTC] message 605e0876073a4 status: sent
+[26-Mar-2021 16:27:19 UTC] message 605e09560a852 status: sent
+[26-Mar-2021 16:27:20 UTC] message 605e09614e4a9 status: sent
+[26-Mar-2021 16:27:20 UTC] message 605e09fb5c3ac status: sent
+[26-Mar-2021 16:27:27 UTC] message 605e0a1619b81 status: sent
+[26-Mar-2021 16:27:27 UTC] message 605e0a8cdde5a status: sent
+[26-Mar-2021 16:27:28 UTC] message 605e0aecca159 status: sent
+[26-Mar-2021 16:29:54 UTC] Received SMS from TELCEL
+[26-Mar-2021 16:29:54 UTC]  message: Consumiste los MB de tu Paq Amigo SL. Tus Min/SMS continuan hasta 02/04/21 Navega bajo demanda o renueva tus beneficios en *133# o pqtmex.telcel.com
+[26-Mar-2021 16:29:54 UTC] Sending reply: You said: Consumiste los MB de tu Paq Amigo SL. Tus Min/SMS continuan hasta 02/04/21 Navega bajo demanda o renueva tus beneficios en *133# o pqtmex.telcel.com
+[26-Mar-2021 16:32:14 UTC] message 605e0a0560cf2 status: sent
+[26-Mar-2021 16:32:15 UTC] message 605e0810ad231 status: failed
+[26-Mar-2021 16:32:15 UTC] PHP Warning:  unlink(/home/drbercom/public_html/example/outgoing_sms/605e0810ad231.json): No such file or directory in /home/drbercom/public_html/example/www/gateway.php on line 109
+[26-Mar-2021 16:32:16 UTC] message 605e07fdaf50a status: failed
+[26-Mar-2021 16:32:16 UTC] PHP Warning:  unlink(/home/drbercom/public_html/example/outgoing_sms/605e07fdaf50a.json): No such file or directory in /home/drbercom/public_html/example/www/gateway.php on line 109
+[26-Mar-2021 16:32:16 UTC] message 605e0bd036999 status: sent
+[26-Mar-2021 16:33:10 UTC] Received SMS from Telcel
+[26-Mar-2021 16:33:10 UTC]  message: Tu recarga de $50 de Saldo Amigo-Folio 941065 activo el Paquete SINLIMITE150: Vig 21/04/21 a las 23:59 hrs. Mas info *133# o mitelcel.com
+[26-Mar-2021 16:33:10 UTC] Sending reply: You said: Tu recarga de $50 de Saldo Amigo-Folio 941065 activo el Paquete SINLIMITE150: Vig 21/04/21 a las 23:59 hrs. Mas info *133# o mitelcel.com
+[26-Mar-2021 16:33:11 UTC] Received SMS from Telcel
+[26-Mar-2021 16:33:11 UTC]  message: Al terminar los beneficios SINLIMITE tus tarifas en Mx/EUA/Can son: (IVA Inc) Seg $0.0125, SMS $0.85, MB $0.85. Mas info *264 o mitelcel.com
+[26-Mar-2021 16:33:11 UTC] Sending reply: You said: Al terminar los beneficios SINLIMITE tus tarifas en Mx/EUA/Can son: (IVA Inc) Seg $0.0125, SMS $0.85, MB $0.85. Mas info *264 o mitelcel.com
+[26-Mar-2021 16:33:13 UTC] Received SMS from Telcel
+[26-Mar-2021 16:33:13 UTC]  message: Tu Saldo Amigo acumulado es de: $0.00 vigencia 21/04/21
+[26-Mar-2021 16:33:13 UTC] Sending reply: You said: Tu Saldo Amigo acumulado es de: $0.00 vigencia 21/04/21
+[26-Mar-2021 16:33:14 UTC] Received SMS from Telcel
+[26-Mar-2021 16:33:14 UTC]  message: Por promo recibe 500MB para navegar en Claro Musica durante la vigencia de tu paquete. Baja la app en bit.ly/2zmoTzI + info www.telcel.com/promocionesamigo
+[26-Mar-2021 16:33:14 UTC] Sending reply: You said: Por promo recibe 500MB para navegar en Claro Musica durante la vigencia de tu paquete. Baja la app en bit.ly/2zmoTzI + info www.telcel.com/promocionesamigo
+[26-Mar-2021 16:37:15 UTC] message 605e0bd9899bf status: sent
+[26-Mar-2021 16:37:17 UTC] message 605e0810ad231 status: failed
+[26-Mar-2021 16:37:17 UTC] PHP Warning:  unlink(/home/drbercom/public_html/example/outgoing_sms/605e0810ad231.json): No such file or directory in /home/drbercom/public_html/example/www/gateway.php on line 109
+[26-Mar-2021 16:37:17 UTC] message 605e07fdaf50a status: failed
+[26-Mar-2021 16:37:17 UTC] PHP Warning:  unlink(/home/drbercom/public_html/example/outgoing_sms/605e07fdaf50a.json): No such file or directory in /home/drbercom/public_html/example/www/gateway.php on line 109
+[26-Mar-2021 17:03:58 UTC] device_status = power_connected
+[26-Mar-2021 17:23:35 UTC] device_status = power_disconnected
+[26-Mar-2021 17:34:50 UTC] device_status = power_connected
+[26-Mar-2021 17:37:18 UTC] message 605e0810ad231 status: failed
+[26-Mar-2021 17:37:18 UTC] PHP Warning:  unlink(/home/drbercom/public_html/example/outgoing_sms/605e0810ad231.json): No such file or directory in /home/drbercom/public_html/example/www/gateway.php on line 109
+[26-Mar-2021 17:37:18 UTC] message 605e07fdaf50a status: failed
+[26-Mar-2021 17:37:18 UTC] PHP Warning:  unlink(/home/drbercom/public_html/example/outgoing_sms/605e07fdaf50a.json): No such file or directory in /home/drbercom/public_html/example/www/gateway.php on line 109
+[26-Mar-2021 18:17:15 UTC] message 605e24bf23564 status: sent
+[26-Mar-2021 18:17:17 UTC] message 605e24de5ef66 status: sent
+[26-Mar-2021 18:22:18 UTC] message 605e252b7a54e status: sent
+[26-Mar-2021 18:22:18 UTC] message 605e26511ebd2 status: sent
+[26-Mar-2021 18:32:16 UTC] Received SMS from 2481561567
+[26-Mar-2021 18:32:16 UTC]  message: Test
+[26-Mar-2021 18:32:16 UTC] Sending reply: You said: Test
+[26-Mar-2021 19:39:17 UTC] device_status = power_disconnected
+[26-Mar-2021 20:07:32 UTC] device_status = power_connected
+[26-Mar-2021 20:12:16 UTC] message 605e3f8ae099f status: sent
+[26-Mar-2021 20:17:16 UTC] message 605e408425274 status: sent
+[26-Mar-2021 20:17:16 UTC] message 605e41351b63d status: sent
+[26-Mar-2021 20:22:21 UTC] message 605e418d97244 status: sent
+[26-Mar-2021 20:22:21 UTC] message 605e426c56017 status: sent
+[26-Mar-2021 20:27:16 UTC] message 605e42b43efde status: sent
+[26-Mar-2021 20:27:16 UTC] message 605e42f1889d9 status: sent
+[26-Mar-2021 20:32:16 UTC] message 605e440644d3d status: sent
+[26-Mar-2021 20:32:16 UTC] message 605e444de061d status: sent
+[26-Mar-2021 20:38:50 UTC] device_status = power_disconnected
+[06-Apr-2021 22:42:11 UTC] message 605ede2655d2e status: sent
+[06-Apr-2021 22:42:11 UTC] message 605edeb43de19 status: sent
+[06-Apr-2021 22:42:12 UTC] message 605ee2715dd9e status: sent
+[06-Apr-2021 22:42:13 UTC] message 605ee5875b788 status: sent
+[06-Apr-2021 22:42:18 UTC] message 605ee7442ada4 status: sent
+[06-Apr-2021 22:42:19 UTC] message 605ee7ac3aa8f status: sent
+[06-Apr-2021 22:42:19 UTC] message 605ee849d4e7b status: sent
+[06-Apr-2021 22:42:20 UTC] message 605ee8d3bb39c status: sent
+[06-Apr-2021 22:42:21 UTC] message 605ee941213a8 status: sent
+[06-Apr-2021 22:42:22 UTC] message 606ce14a618a0 status: sent
+[06-Apr-2021 22:43:03 UTC] message 605ee6db7e2b5 status: sent
+[06-Apr-2021 22:43:03 UTC] message 606ce3a5d4097 status: sent
+[06-Apr-2021 22:43:04 UTC] message 606ce3c38cbfb status: sent
+[07-Apr-2021 18:17:47 UTC] message 606df6425b523 status: sent
+[07-Apr-2021 18:17:47 UTC] message 606df689a1f55 status: sent
+[07-Apr-2021 18:17:49 UTC] message 606df6fef1154 status: sent
+[07-Apr-2021 18:17:49 UTC] message 606df7290c123 status: sent
+[07-Apr-2021 18:27:46 UTC] message 606df7e5a049a status: sent
+[07-Apr-2021 18:27:47 UTC] message 606df92191258 status: sent
+[07-Apr-2021 18:27:47 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:27:47 UTC]  message: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:27:47 UTC] Sending reply: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:27:53 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:27:53 UTC]  message: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:27:53 UTC] Sending reply: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:27:56 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:27:56 UTC]  message: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:27:56 UTC] Sending reply: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:27:59 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:27:59 UTC]  message: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:27:59 UTC] Sending reply: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:01 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:28:01 UTC]  message: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:01 UTC] Sending reply: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:03 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:28:03 UTC]  message: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:03 UTC] Sending reply: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:05 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:28:05 UTC]  message: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:05 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:07 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:28:07 UTC]  message: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:07 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:09 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:28:09 UTC]  message: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:09 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:12 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:28:12 UTC]  message: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:12 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:14 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:28:14 UTC]  message: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:14 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:17 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:28:17 UTC]  message: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:17 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:20 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:28:20 UTC]  message: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:20 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:23 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:28:23 UTC]  message: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:23 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:26 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:28:26 UTC]  message: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:26 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:29 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:28:29 UTC]  message: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:28:29 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es: 
+[07-Apr-2021 18:32:44 UTC] message 606df97b8215d status: sent
+[07-Apr-2021 18:32:46 UTC] message 606dfa3630c45 status: sent
+[07-Apr-2021 18:32:46 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:32:46 UTC]  message: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:32:46 UTC] Sending reply: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:32:47 UTC] message 606dfa42e9ade status: sent
+[07-Apr-2021 18:33:08 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:33:08 UTC]  message: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:08 UTC] Sending reply: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:10 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:33:10 UTC]  message: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:10 UTC] Sending reply: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:12 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:33:12 UTC]  message: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:12 UTC] Sending reply: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:15 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:33:15 UTC]  message: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:15 UTC] Sending reply: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:17 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:33:17 UTC]  message: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:17 UTC] Sending reply: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:19 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:33:19 UTC]  message: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:19 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:21 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:33:21 UTC]  message: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:21 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:23 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:33:23 UTC]  message: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:23 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:26 UTC] Received SMS from 2481633404
+[07-Apr-2021 18:33:26 UTC]  message: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:33:26 UTC] Sending reply: You said: You said: You said: You said: You said: You said: You said: You said: You said: You said: Bienvenido a Oficio Digital tu código de acceso es:
+[07-Apr-2021 18:42:46 UTC] message 606dfc54d4791 status: sent
+[07-Apr-2021 18:47:46 UTC] message 606dfde6dbd09 status: sent
+[07-Apr-2021 18:47:47 UTC] message 606dfe2d3bde1 status: sent
+[07-Apr-2021 18:52:47 UTC] message 606dfe5fe9502 status: sent
+[07-Apr-2021 18:52:48 UTC] message 606dfe89c4e38 status: sent
+[07-Apr-2021 18:57:47 UTC] message 606e0075dfa55 status: sent
+[07-Apr-2021 18:57:47 UTC] message 606e0081e039d status: sent
+[07-Apr-2021 19:02:45 UTC] message 606e00ab16328 status: sent
+[07-Apr-2021 19:02:46 UTC] message 606e00f7c939d status: sent
+[07-Apr-2021 19:02:46 UTC] message 606e011ce307b status: sent
+[07-Apr-2021 20:12:47 UTC] message 606e11b69caf7 status: sent
+[07-Apr-2021 21:34:23 UTC] message 606e241cf269a status: sent
+[07-Apr-2021 21:34:27 UTC] message 606e2558ddb47 status: failed
+[07-Apr-2021 21:34:51 UTC] message 606e2558ddb47 status: failed
+[07-Apr-2021 21:34:51 UTC] PHP Warning:  unlink(/home/drbercom/public_html/example/outgoing_sms/606e2558ddb47.json): No such file or directory in /home/drbercom/public_html/example/www/gateway.php on line 109
+[07-Apr-2021 21:35:23 UTC] message 606e2595f087e status: failed
+[07-Apr-2021 21:35:47 UTC] message 606e2595f087e status: failed
+[07-Apr-2021 21:35:47 UTC] PHP Warning:  unlink(/home/drbercom/public_html/example/outgoing_sms/606e2595f087e.json): No such file or directory in /home/drbercom/public_html/example/www/gateway.php on line 109
+[07-Apr-2021 21:37:24 UTC] message 606e25f5bd470 status: sent

@@ -50,12 +50,12 @@ return [
 
         'ftp' => [
             'driver'   => 'ftp',
-            'host'     => 'ftp.example.com',
-            'username' => 'your-username',
-            'password' => 'your-password',
+            'host'     => 'ftp.drber.com.mx',
+            'username' => 'oficioDigitalApp@drber.com.mx',
+            'password' => 'W}s=QzV#HSf_',
 
             // Optional FTP Settings...
-            // 'port'     => 21,
+            //'port'     => 21,
             // 'root'     => '',
             // 'passive'  => true,
             // 'ssl'      => true,

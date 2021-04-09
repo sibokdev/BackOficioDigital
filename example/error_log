@@ -1,0 +1,48 @@
+[25-Mar-2021 18:17:40 UTC] Usage: php send_sms.php <to> "<message>"
+[25-Mar-2021 18:17:40 UTC] Example: 
+[25-Mar-2021 18:17:40 UTC]      php send_sms.php 16504449876 "hello world"
+[25-Mar-2021 18:17:40 UTC] PHP Warning:  Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP) in /home/drbercom/public_html/example/send_sms.php on line 16
+[25-Mar-2021 18:19:39 UTC] Usage: php send_sms.php <to> "<message>"
+[25-Mar-2021 18:19:39 UTC] Example: 
+[25-Mar-2021 18:19:39 UTC]      php send_sms.php 16504449876 "hello world"
+[25-Mar-2021 18:19:39 UTC] PHP Warning:  Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP) in /home/drbercom/public_html/example/send_sms.php on line 16
+[25-Mar-2021 18:30:46 UTC] Usage: php send_sms.php <to> "<message>"
+[25-Mar-2021 18:30:46 UTC] Example: 
+[25-Mar-2021 18:30:46 UTC]      php send_sms.php 16504449876 "hello world"
+[25-Mar-2021 18:30:46 UTC] PHP Warning:  Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP) in /home/drbercom/public_html/example/send_sms.php on line 16
+[25-Mar-2021 18:31:04 UTC] Usage: php send_sms.php <to> "<message>"
+[25-Mar-2021 18:31:04 UTC] Example: 
+[25-Mar-2021 18:31:04 UTC]      php send_sms.php 16504449876 "hello world"
+[25-Mar-2021 18:31:04 UTC] PHP Warning:  Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP) in /home/drbercom/public_html/example/send_sms.php on line 16
+[26-Mar-2021 05:02:37 UTC] Usage: php send_sms.php <to> "<message>"
+[26-Mar-2021 05:02:37 UTC] Example: 
+[26-Mar-2021 05:02:37 UTC]      php send_sms.php 16504449876 "hello world"
+[26-Mar-2021 05:02:37 UTC] PHP Warning:  Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP) in /home/drbercom/public_html/example/send_sms.php on line 16
+[26-Mar-2021 16:47:27 UTC] Usage: php send_sms.php <to> "<message>"
+[26-Mar-2021 16:47:27 UTC] Example: 
+[26-Mar-2021 16:47:27 UTC]      php send_sms.php 16504449876 "hello world"
+[26-Mar-2021 16:47:27 UTC] PHP Warning:  Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP) in /home/drbercom/public_html/example/send_sms.php on line 16
+[07-Apr-2021 18:26:13 UTC] Usage: php send_sms.php <to> "<message>"
+[07-Apr-2021 18:26:13 UTC] Example: 
+[07-Apr-2021 18:26:13 UTC]      php send_sms.php 16504449876 "hello world"
+[07-Apr-2021 18:26:13 UTC] PHP Warning:  Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP) in /home/drbercom/public_html/example/send_sms.php on line 16
+[07-Apr-2021 18:33:15 UTC] Usage: php send_sms.php <to> "<message>"
+[07-Apr-2021 18:33:15 UTC] Example: 
+[07-Apr-2021 18:33:15 UTC]      php send_sms.php 16504449876 "hello world"
+[07-Apr-2021 18:33:15 UTC] PHP Warning:  Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP) in /home/drbercom/public_html/example/send_sms.php on line 16
+[07-Apr-2021 18:34:55 UTC] Usage: php send_sms.php <to> "<message>"
+[07-Apr-2021 18:34:55 UTC] Example: 
+[07-Apr-2021 18:34:55 UTC]      php send_sms.php 16504449876 "hello world"
+[07-Apr-2021 18:34:55 UTC] PHP Warning:  Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP) in /home/drbercom/public_html/example/send_sms.php on line 16
+[07-Apr-2021 18:37:27 UTC] Usage: php send_sms.php <to> "<message>"
+[07-Apr-2021 18:37:27 UTC] Example: 
+[07-Apr-2021 18:37:27 UTC]      php send_sms.php 16504449876 "hello world"
+[07-Apr-2021 18:37:27 UTC] PHP Warning:  Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP) in /home/drbercom/public_html/example/send_sms.php on line 16
+[07-Apr-2021 18:43:47 UTC] Usage: php send_sms.php <to> "<message>"
+[07-Apr-2021 18:43:47 UTC] Example: 
+[07-Apr-2021 18:43:47 UTC]      php send_sms.php 16504449876 "hello world"
+[07-Apr-2021 18:43:47 UTC] PHP Warning:  Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP) in /home/drbercom/public_html/example/send_sms.php on line 16
+[07-Apr-2021 18:45:10 UTC] Usage: php send_sms.php <to> "<message>"
+[07-Apr-2021 18:45:10 UTC] Example: 
+[07-Apr-2021 18:45:10 UTC]      php send_sms.php 16504449876 "hello world"
+[07-Apr-2021 18:45:10 UTC] PHP Warning:  Use of undefined constant error - assumed 'error' (this will throw an Error in a future version of PHP) in /home/drbercom/public_html/example/send_sms.php on line 16
