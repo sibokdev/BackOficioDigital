@@ -5,7 +5,7 @@ Route::get('auth/login', 'Auth\AuthController@loginView');
 Route::post('auth/loginForm', 'Auth\AuthController@login');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::get('client/active/{email}',  'UsersApiController@active');
-Route::get('courier/oficios',  'CouriersApiController@getOficiosCatalog');
+Route::get('oficios',  'CouriersApiController@getOficiosCatalog');
 // Registration routes...
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
