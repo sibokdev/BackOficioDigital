@@ -521,7 +521,7 @@ class CouriersApiController extends Controller{
        }
 
       public function getOficiosCatalog(Request $request){
-         return ([ "message" => "Existe","code" => 200]);
+         return ([ "message" => "lo que sea","code" => 200]);
       }
    }
 
